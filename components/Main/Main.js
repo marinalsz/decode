@@ -12,7 +12,7 @@ const Main = () => `
     <p id="hero-description">${hero_description}</p>
   </section>
   <section id="artists">
-    ${Card("skim")}
+    ${Card("peruse")}
   </section>
 </main>
 `;
