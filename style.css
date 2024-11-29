@@ -34,7 +34,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--cardinal);
+  background-color: var(--electric-indigo);
 }
 
 ul {
@@ -60,8 +60,8 @@ h2 {
 }
 
 h3 {
-  color: white;
   font-weight: 700;
+  font-size: 1.5em;
   letter-spacing: 1.5px;
 }
 

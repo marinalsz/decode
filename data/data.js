@@ -379,7 +379,7 @@ const data = {
       name: "Tyla",
       hometown: "Gauteng, ZAF",
       image: "/artists/tyla.png",
-      genre: "Amapiano",
+      genre: "Pop",
       label: "Epic",
       age: 22,
       debutYear: 2019,
@@ -801,10 +801,10 @@ const data = {
       name: "Gracie Abrams",
       hometown: "California, USA",
       image: "/artists/gracie-abrams.png",
-      genre: "Alternative",
+      genre: "Pop",
       label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      age: 25,
+      debutYear: 2019,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -861,10 +861,10 @@ const data = {
       name: "Chappell Roan",
       hometown: "Missouri, USA",
       image: "/artists/chappell-roan.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Pop",
+      label: "Island",
+      age: 26,
+      debutYear: 2014,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -921,10 +921,10 @@ const data = {
       name: "SZA",
       hometown: "Missouri, USA",
       image: "/artists/sza.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "R&B",
+      label: "RCA",
+      age: 35,
+      debutYear: 2012,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -981,10 +981,10 @@ const data = {
       name: "Lady Gaga",
       hometown: "New York, USA",
       image: "/artists/lady-gaga.png",
-      genre: "Alternative",
+      genre: "Pop",
       label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      age: 38,
+      debutYear: 2001,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1041,10 +1041,10 @@ const data = {
       name: "Kehlani",
       hometown: "California, USA",
       image: "/artists/kehlani.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "R&B",
+      label: "Atlantic",
+      age: 29,
+      debutYear: 2009,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1101,10 +1101,10 @@ const data = {
       name: "Lola Índigo",
       hometown: "Granada, ESP",
       image:"/artists/lola-indigo.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Pop",
+      label: "Universal",
+      age: 32,
+      debutYear: 2017,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1161,10 +1161,10 @@ const data = {
       name: "María José Llergo",
       hometown: "Córdoba, ESP",
       image:"/artists/maria-jose-llergo.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Flamenco",
+      label: "Sony",
+      age: 30,
+      debutYear: 2018,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1221,9 +1221,9 @@ const data = {
       name: "Tems",
       hometown: "Lagos, NGA",
       image: "/artists/tems.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
+      genre: "Alté",
+      label: "RCA",
+      age: 29,
       debutYear: 2015,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
@@ -1281,10 +1281,10 @@ const data = {
       name: "Ana Mena",
       hometown: "Málaga, ESP",
       image: "/artists/ana-mena.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Pop",
+      label: "Sony",
+      age: 27,
+      debutYear: 2006,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1341,10 +1341,10 @@ const data = {
       name: "Griff",
       hometown: "Hertfordshire, GBR",
       image: "/artists/griff.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Pop",
+      label: "Warner",
+      age: 23,
+      debutYear: 2019,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1402,9 +1402,9 @@ const data = {
       hometown: "Georgia, USA",
       image: "/artists/clairo.png",
       genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      label: "Fader",
+      age: 26,
+      debutYear: 2011,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {
@@ -1461,10 +1461,10 @@ const data = {
       name: "Rozalén",
       hometown: "Albacete, ESP",
       image: "/artists/rozalen.png",
-      genre: "Alternative",
-      label: "Interscope",
-      age: 22,
-      debutYear: 2015,
+      genre: "Pop",
+      label: "Sony",
+      age: 38,
+      debutYear: 2012,
       description:
         "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
       stats: {

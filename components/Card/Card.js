@@ -10,7 +10,7 @@ const Card = (type) => {
       .map(
         (artist) => `
       <article class="card skim">
-      <p id="rankingPosition">${artist.rankingPosition}</p>
+      <span id="rankingPosition">${artist.rankingPosition}</span>
       <h3>${artist.name}</h3>
       </article>
       `
@@ -23,7 +23,7 @@ const Card = (type) => {
         .map(
           (artist) => `
         <article class="card peruse">
-        <p id="rankingPosition">${artist.rankingPosition}</p>
+        <span id="rankingPosition">${artist.rankingPosition}</span>
         <h3>${artist.name}</h3>
         <p>${artist.hometown}</p>
         <div class="profile">
@@ -51,7 +51,7 @@ const Card = (type) => {
          .map(
            (artist) => `
         <article class="card deep-dive">
-          <p id="rankingPosition">${artist.rankingPosition}</p>
+          <span id="rankingPosition">${artist.rankingPosition}</span>
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
           <div class="profile">

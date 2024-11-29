@@ -1,22 +1,27 @@
 .card {
   width: 100%;
-  color: white;
+  color: black;
   padding: 10px;
   border-radius: 12px;
   transition: 0.5s;
-  background: rgba(102, 16, 242, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: var(--electric-indigo);
+  box-shadow: black 0px 0px 0px 5px inset,var(--pumpkin) -10px 10px inset, black 10px 10px inset, black -10px -10px inset, white 15px -15px inset;
 }
 
 #rankingPosition {
+  background-color: var(--pumpkin);
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  border: 2px solid black;
   color: white;
-  font-size: 3em;
+  font-size: 3.5em;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--tufts-blue);
+  -webkit-text-stroke-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card.skim {
@@ -55,13 +60,21 @@
 
 .profile > img {
   width: 100%;
-  height: auto;
+  height: 50%;
   object-fit: cover;
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: url("https://i.pinimg.com/736x/9b/2e/c5/9b2ec57792ddb57903021d20e16b99c9.jpg");
   border-bottom: 2px solid black;
 }
 
 .stats {
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,5 +85,6 @@
 .card.skim:hover,
 .card.peruse:hover,
 .card.deep-dive:hover {
-  background-color: var(--electric-indigo);
+  background-color: black;
+  color: white;
 }
