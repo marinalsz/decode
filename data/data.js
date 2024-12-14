@@ -4,12 +4,12 @@ const data = {
   opener: "/nba-ranked-opener.png",
   opener_alt: "Artists opener",
   title: "Class Of 2024",
-  subtitle: "Ranking everything that matters in music",
+  subtitle: "Celebrating the artists who shaped this year’s soundtrack.",
   hero_title: "The top 25 artists in 2024",
   hero_image: "/nba-top-100-opener.png",
   hero_alt: "Artists",
   hero_description:
-    "Welcome to Decode's Top 25 Artists in the NBA for the 2024-25 season—a year-round, around-the-clock ranking of the players making the biggest impact on the league right now. Throughout the regular season and into the offseason, Bill Simmons, Danny Chau, Zach Kram, Rob Mahoney, Michael Pina, and Justin Verrier will update this list based on recent results and new developments. Check back regularly for revised rankings, fresh analysis, new features, and more.",
+    "This year, the music scene has been electrified by singers who’ve captivated audiences with their powerful voices and unforgettable performances. From chart-topping hits to genre-defying artistry, these vocalists have shaped the soundtrack of 2024. Here’s a look at the top 25 singers who defined the year with their talent and impact.",
   artists: [
     {
       rankingPosition: "01",
@@ -21,7 +21,7 @@ const data = {
       age: 22,
       debutYear: 2015,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Boundary-pushing innovator, pairing a haunting voice with minimalist production and introspective lyrics.",
       stats: {
         albums: 3,
         tours: 7,
@@ -81,7 +81,7 @@ const data = {
       age: 29,
       debutYear: 2014,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Magnetic performer, blending disco-inspired pop with sleek vocals and electrifying stage presence.",
       stats: {
         albums: 3,
         tours: 3,
@@ -141,7 +141,7 @@ const data = {
       age: 34,
       debutYear: 2004,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Iconic storyteller, seamlessly transitioning genres while crafting timeless, relatable lyrics.",
       stats: {
         albums: 15,
         tours: 6,
@@ -195,14 +195,13 @@ const data = {
       rankingPosition: "04",
       name: "Sabrina Carpenter",
       hometown: "Pennsylvania, USA",
-      image:
-        "/artists/sabrina-carpenter.png",
+      image: "/artists/sabrina-carpenter.png",
       genre: "Pop",
       label: "Island",
       age: 25,
       debutYear: 2011,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Dynamic vocalist, delivering a perfect mix of emotional ballads and infectious pop hooks.",
       stats: {
         albums: 3,
         tours: 7,
@@ -256,14 +255,13 @@ const data = {
       rankingPosition: "05",
       name: "Charli XCX",
       hometown: "Cambridge, GBR",
-      image:
-        "/artists/charli-xcx.png",
+      image: "/artists/charli-xcx.png",
       genre: "Pop",
       label: "Atlantic",
       age: 32,
       debutYear: 2007,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Visionary trendsetter, merging experimental sounds with edgy, high-energy performances.",
       stats: {
         albums: 3,
         tours: 7,
@@ -317,14 +315,13 @@ const data = {
       rankingPosition: "06",
       name: "Karol G",
       hometown: "Medellín, COL",
-      image:
-        "/artists/karol-g.png",
+      image: "/artists/karol-g.png",
       genre: "Urban Pop",
       label: "Interscope",
       age: 33,
       debutYear: 2007,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Vibrant trailblazer, infusing Latin rhythms with global pop appeal and empowering lyrics.",
       stats: {
         albums: 3,
         tours: 7,
@@ -384,7 +381,7 @@ const data = {
       age: 22,
       debutYear: 2019,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Rising star, combining Afrobeat grooves with smooth vocals and captivating energy.",
       stats: {
         albums: 3,
         tours: 7,
@@ -444,7 +441,7 @@ const data = {
       age: 31,
       debutYear: 2008,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Effortless virtuoso, delivering breathtaking vocal runs and genre-spanning hits.",
       stats: {
         albums: 3,
         tours: 7,
@@ -498,14 +495,13 @@ const data = {
       rankingPosition: "09",
       name: "Tate McRae",
       hometown: "Alberta, CAN",
-      image:
-        "/artists/tate-mcrae.png",
+      image: "/artists/tate-mcrae.png",
       genre: "Pop",
       label: "RCA",
       age: 21,
       debutYear: 2013,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Emotional powerhouse, blending heartfelt storytelling with danceable pop beats.",
       stats: {
         albums: 3,
         tours: 7,
@@ -559,14 +555,13 @@ const data = {
       rankingPosition: "10",
       name: "Rosalía",
       hometown: "Barcelona, ESP",
-      image:
-        "/artists/rosalia.png",
+      image: "/artists/rosalia.png",
       genre: "Pop",
       label: "Columbia",
       age: 32,
       debutYear: 2009,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Avant-garde chameleon, redefining genres with experimental production and bold artistry.",
       stats: {
         albums: 3,
         tours: 7,
@@ -626,7 +621,7 @@ const data = {
       age: 30,
       debutYear: 2010,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Fearless storyteller, delivering raw emotion with powerhouse vocals and unapologetic lyrics.",
       stats: {
         albums: 3,
         tours: 7,
@@ -686,7 +681,7 @@ const data = {
       age: 30,
       debutYear: 2012,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Earthy innovator, blending folk roots with modern pop for an authentic and soulful sound.",
       stats: {
         albums: 3,
         tours: 7,
@@ -746,7 +741,7 @@ const data = {
       age: 21,
       debutYear: 2015,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Breakout sensation, crafting deeply relatable anthems with heartfelt lyrics and soaring melodies.",
       stats: {
         albums: 3,
         tours: 7,
@@ -806,7 +801,7 @@ const data = {
       age: 25,
       debutYear: 2019,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Introspective lyricist, creating hauntingly delicate songs that resonate with quiet vulnerability.",
       stats: {
         albums: 3,
         tours: 7,
@@ -866,7 +861,7 @@ const data = {
       age: 26,
       debutYear: 2014,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Daring pop provocateur, combining bold visuals with theatrical, high-energy anthems.",
       stats: {
         albums: 3,
         tours: 7,
@@ -926,7 +921,7 @@ const data = {
       age: 35,
       debutYear: 2012,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Soulful trailblazer, blending contemporary R&B with introspective storytelling and vocal finesse.",
       stats: {
         albums: 3,
         tours: 7,
@@ -986,7 +981,7 @@ const data = {
       age: 38,
       debutYear: 2001,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Genre-defying icon, merging theatricality with boundary-pushing artistry and timeless hits.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1046,7 +1041,7 @@ const data = {
       age: 29,
       debutYear: 2009,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Smooth powerhouse, effortlessly combining sultry vocals with heartfelt R&B-infused tracks.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1100,13 +1095,13 @@ const data = {
       rankingPosition: "19",
       name: "Lola Índigo",
       hometown: "Granada, ESP",
-      image:"/artists/lola-indigo.png",
+      image: "/artists/lola-indigo.png",
       genre: "Pop",
       label: "Universal",
       age: 32,
       debutYear: 2017,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Dynamic performer, blending vibrant pop hooks with electrifying choreography and energy.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1160,13 +1155,13 @@ const data = {
       rankingPosition: "20",
       name: "María José Llergo",
       hometown: "Córdoba, ESP",
-      image:"/artists/maria-jose-llergo.png",
+      image: "/artists/maria-jose-llergo.png",
       genre: "Flamenco",
       label: "Sony",
       age: 30,
       debutYear: 2018,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Flamenco visionary, infusing traditional roots with modern experimentation and passionate delivery.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1226,7 +1221,7 @@ const data = {
       age: 29,
       debutYear: 2015,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Soulful innovator, blending Afrobeats with emotional depth and captivating melodies.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1286,7 +1281,7 @@ const data = {
       age: 27,
       debutYear: 2006,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Latin pop sensation, merging urban rhythms with infectious energy and multilingual versatility.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1346,7 +1341,7 @@ const data = {
       age: 23,
       debutYear: 2019,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Indie pop prodigy, crafting introspective, atmospheric tracks with a unique, minimalistic touch.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1406,7 +1401,7 @@ const data = {
       age: 26,
       debutYear: 2011,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Indie pop storyteller, weaving raw emotion into delicate yet powerful melodies.",
       stats: {
         albums: 3,
         tours: 7,
@@ -1466,7 +1461,7 @@ const data = {
       age: 38,
       debutYear: 2012,
       description:
-        "The unquestioned best player in the world, armed with an unstoppable combination of size, skill, and IQ.",
+        "Folk-inspired lyricist, blending social consciousness with melodic richness and heartfelt vocals.",
       stats: {
         albums: 3,
         tours: 7,

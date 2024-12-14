@@ -1,12 +1,13 @@
 .card {
   width: 100%;
   color: black;
-  padding: 10px;
   border-radius: 12px;
   transition: 0.5s;
   border-radius: 10px;
-  background-color: var(--electric-indigo);
-  box-shadow: black 0px 0px 0px 5px inset,var(--pumpkin) -10px 10px inset, black 10px 10px inset, black -10px -10px inset, white 15px -15px inset;
+  background-color: white;
+  box-shadow: black 0px 0px 0px 5px inset, var(--pumpkin) -10px 10px inset,
+    black 10px 10px inset, black -10px -10px inset,
+    var(--electric-indigo) 15px -15px inset;
 }
 
 #rankingPosition {
@@ -25,7 +26,7 @@
 }
 
 .card.skim {
-  height: 120px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,32 +55,42 @@
 }
 
 .profile {
-  background-color: rgb(255, 255, 255);
+  width: 100%;
   border: 2px solid black;
 }
 
 .profile > img {
   width: 100%;
-  height: 50%;
   object-fit: cover;
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
   background: url("https://i.pinimg.com/736x/9b/2e/c5/9b2ec57792ddb57903021d20e16b99c9.jpg");
   border-bottom: 2px solid black;
 }
 
 .stats {
   width: 100%;
-  height: 50%;
   display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.stats-one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  color: black;
-  gap: 10px;
+  border-right: 2px solid black;
+}
+
+.stats-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description{
+  text-align: justify;
 }
 
 .card.skim:hover,

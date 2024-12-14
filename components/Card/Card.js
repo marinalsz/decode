@@ -10,8 +10,8 @@ const Card = (type) => {
       .map(
         (artist) => `
       <article class="card skim">
-      <span id="rankingPosition">${artist.rankingPosition}</span>
-      <h3>${artist.name}</h3>
+        <span id="rankingPosition">${artist.rankingPosition}</span>
+        <h3>${artist.name}</h3>
       </article>
       `
       )
@@ -23,23 +23,27 @@ const Card = (type) => {
         .map(
           (artist) => `
         <article class="card peruse">
-        <span id="rankingPosition">${artist.rankingPosition}</span>
-        <h3>${artist.name}</h3>
-        <p>${artist.hometown}</p>
-        <div class="profile">
-            <img src="${artist.image}" alt="${artist.name}" />
-            <div class="stats">
-                <div>
-                    <p><strong>Genre</strong> ${artist.genre}</p>
-                    <p><strong>Label</strong> ${artist.label}</p>
-                </div>
-                <div>
-                    <p><strong>Age</strong> ${artist.age}</p>
-                    <p><strong>Debut year</strong> ${artist.debutYear}</p>
-                </div>
-            </div>
-        </div>
-        <p>${artist.description}</p>
+          <span id="rankingPosition">${artist.rankingPosition}</span>
+          <h3>${artist.name}</h3>
+          <p>${artist.hometown}</p>
+          <div class="profile">
+              <img src="${artist.image}" alt="${artist.name}" />
+              <div class="stats">
+                  <div class="stats-one">
+                      <p><strong>Genre</strong></p>
+                      <p>${artist.genre}</p>
+                      <p><strong>Label</strong></p>
+                      <p>${artist.label}</p>
+                  </div>
+                  <div class="stats-two">
+                      <p><strong>Age</strong></p>
+                      <p>${artist.age}</p>
+                      <p><strong>Debut year</strong></p>
+                      <p>${artist.debutYear}</p>
+                  </div>
+              </div>
+          </div>
+          <p class="description">${artist.description}</p>
         </article>
         `
         )
@@ -55,25 +59,23 @@ const Card = (type) => {
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
           <div class="profile">
-            <img src="${artist.image}" alt="${artist.name}" />
-            <div class="stats">
-                <div>
-                    <p><strong>Genre</strong> ${artist.genre}</p>
-                    <p><strong>Label</strong> ${artist.label}</p>
-                </div>
-                <div>
-                    <p><strong>Age</strong> ${artist.age}</p>
-                    <p><strong>Debut year</strong> ${artist.debutYear}</p>
-                </div>
-            </div>
-            <div>
-              <p><strong>Albums</strong> ${artist.stats.albums}</p>
-              <p><strong>Tours</strong> ${artist.stats.tours}</p>
-              <p><strong>Listeners</strong> ${artist.stats.listeners}</p>
-              <p><strong>Streams</strong> ${artist.stats.streams}</p>
-            </div>
+              <img src="${artist.image}" alt="${artist.name}" />
+              <div class="stats">
+                  <div class="stats-one">
+                      <p><strong>Genre</strong></p>
+                      <p>${artist.genre}</p>
+                      <p><strong>Label</strong></p>
+                      <p>${artist.label}</p>
+                  </div>
+                  <div class="stats-two">
+                      <p><strong>Age</strong></p>
+                      <p>${artist.age}</p>
+                      <p><strong>Debut year</strong></p>
+                      <p>${artist.debutYear}</p>
+                  </div>
+              </div>
           </div>
-          <p>${artist.description}</p>
+          <p class="description">${artist.description}</p>
           <h3>Skills</h3>
           <div class="skills">
           ${artist.skills
