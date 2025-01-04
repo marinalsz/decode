@@ -1,25 +1,26 @@
 header {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 60px;
+  gap: 60px;
   background-color: black;
 }
 
 #logo {
   width: 200px;
   height: auto;
-  object-fit: cover;
 }
 
 #opener {
   width: 100%;
   height: auto;
   object-fit: cover;
+  filter: grayscale(100%);
+
 }
 
 #subtitle {

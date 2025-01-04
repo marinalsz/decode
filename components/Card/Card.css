@@ -1,5 +1,6 @@
 .card {
-  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
   color: black;
   border-radius: 12px;
   transition: 0.5s;
@@ -15,7 +16,7 @@
   width: 90px;
   height: 90px;
   border-radius: 100px;
-  border: 2px solid black;
+  border: 6px double var(--electric-indigo);
   color: white;
   font-size: 3.5em;
   -webkit-text-stroke-width: 2px;
@@ -41,7 +42,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .card.card.deep-dive {
@@ -51,46 +52,92 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .profile {
   width: 100%;
-  border: 2px solid black;
+  height: auto;
+  border: 10px double var(--electric-indigo);
+  background-color: var(--pumpkin);
 }
 
 .profile > img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   background: url("https://i.pinimg.com/736x/9b/2e/c5/9b2ec57792ddb57903021d20e16b99c9.jpg");
-  border-bottom: 2px solid black;
 }
 
 .stats {
   width: 100%;
+  height: auto;
   display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .stats-one {
   width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-right: 2px solid black;
+  border-right: 5px double black;
 }
 
 .stats-two {
   width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-left: 5px double black;
 }
 
-.description{
+.description {
   text-align: justify;
+}
+
+.skill {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  border: 5px double var(--pumpkin);
+  background-color: var(--saffron);
+}
+
+.skill h3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills,
+.awards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.skill-image,
+.award-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .card.skim:hover,

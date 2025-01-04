@@ -9,7 +9,7 @@ const Card = (type) => {
     ${artists
       .map(
         (artist) => `
-      <article class="card skim">
+      <article class="card skim" data-genre="${artist.genre}" data-label="${artist.label}" data-info="skim">
         <span id="rankingPosition">${artist.rankingPosition}</span>
         <h3>${artist.name}</h3>
       </article>
@@ -22,7 +22,7 @@ const Card = (type) => {
       ${artists
         .map(
           (artist) => `
-        <article class="card peruse">
+        <article class="card peruse" data-genre="${artist.genre}" data-label="${artist.label}" data-info="peruse">
           <span id="rankingPosition">${artist.rankingPosition}</span>
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
@@ -54,7 +54,9 @@ const Card = (type) => {
        ${artists
          .map(
            (artist) => `
-        <article class="card deep-dive">
+        <article class="card deep-dive" data-genre="${
+          artist.genre
+        }" data-label="${artist.label}" data-info="deep-dive">
           <span id="rankingPosition">${artist.rankingPosition}</span>
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
@@ -66,43 +68,40 @@ const Card = (type) => {
                       <p>${artist.genre}</p>
                       <p><strong>Label</strong></p>
                       <p>${artist.label}</p>
+                      <p><strong>Albums</strong></p>
+                      <p>${artist.stats.albums}</p>
+                      <p><strong>Listeners</strong></p>
+                      <p>${artist.stats.listeners}</p>
                   </div>
                   <div class="stats-two">
                       <p><strong>Age</strong></p>
                       <p>${artist.age}</p>
                       <p><strong>Debut year</strong></p>
                       <p>${artist.debutYear}</p>
+                      <p><strong>Tours</strong></p>
+                      <p>${artist.stats.tours}</p>
+                       <p><strong>Streams</strong></p>
+                      <p>${artist.stats.streams}</p>
                   </div>
               </div>
           </div>
           <p class="description">${artist.description}</p>
-          <h3>Skills</h3>
-          <div class="skills">
-          ${artist.skills
-          .map(
-            (skill) => `
-          <div class="skill">
-            <img src="${skill.image}" alt="${skill.name}" class="skill-image" />
-            <p>${skill.name}</p>
-          </div>
-        `
-          )
-          .join("")}
-        </div>
-        <h3>Awards</h3>
-        <ul class="awards">
-        ${artist.awards
-          .map(
-            (award) => `
-          <li>
-            <img src="${award.image}" alt="${award.name}" class="award-image" />
-            ${award.name} (x${award.quantity})
-          </li>
-        `
-          )
-          .join("")}
-      </ul>
-      <p><strong>Analysis:</strong> ${artist.analysis}</p>
+          <section class="skill">
+            <h3>Skills</h3>
+            <ul class="skills">
+            ${artist.skills
+              .map(
+                (skill) => `
+            <li>
+              <img src="${skill.image}" alt="${skill.name}" class="skill-image" />
+              <p>${skill.name}</p>
+            </li>
+            `
+              )
+              .join("")}
+            </ul>
+          </section>
+      <p class="description"><strong>Analysis:</strong> ${artist.analysis}</p>
       </article>
         `
          )

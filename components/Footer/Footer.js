@@ -5,7 +5,10 @@ const { subtitle } = data;
 
 const Footer = () => `
 <footer>
-  <p id="subtitle">${subtitle}</p>
+  <p>
+    &copy; 2024, Decode. Powered by
+    <a href="https://github.com/marinalsz" rel="noopener" target="_blank">Marina López</a>
+  </p>
 </footer>
 `;
 
