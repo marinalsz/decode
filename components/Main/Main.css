@@ -35,7 +35,7 @@ main {
 
 #artists {
   width: 100%;
-  min-height: 200vh;
+  height: auto;
   background-color: inherit;
   display: flex;
   flex-direction: column;
@@ -43,4 +43,5 @@ main {
   align-items: center;
   padding: 10px;
   gap: 20px;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
 }

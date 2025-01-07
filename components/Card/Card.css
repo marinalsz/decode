@@ -1,24 +1,30 @@
 .card {
   min-width: 300px;
   max-width: 600px;
+  height: auto;
   color: black;
-  border-radius: 12px;
-  transition: 0.5s;
   border-radius: 10px;
   background-color: white;
   box-shadow: black 0px 0px 0px 5px inset, var(--pumpkin) -10px 10px inset,
     black 10px 10px inset, black -10px -10px inset,
     var(--electric-indigo) 15px -15px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  transition: 0.5s;
 }
 
 #rankingPosition {
-  background-color: var(--pumpkin);
-  width: 90px;
-  height: 90px;
+  background: url("/noise.png");
+  width: 100px;
+  height: 100px;
   border-radius: 100px;
   border: 6px double var(--electric-indigo);
   color: white;
-  font-size: 3.5em;
+  font-size: 3em;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   display: flex;
@@ -26,40 +32,11 @@
   align-items: center;
 }
 
-.card.skim {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.card.peruse {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 30px;
-}
-
-.card.card.deep-dive {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 30px;
-}
-
 .profile {
   width: 100%;
   height: auto;
   border: 10px double var(--electric-indigo);
-  background-color: var(--pumpkin);
+  background: url(/noise.png);
 }
 
 .profile > img {
@@ -75,6 +52,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 10px;
 }
 
 .stats-one {
@@ -108,10 +86,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   gap: 10px;
   text-align: center;
-  border: 5px double var(--pumpkin);
-  background-color: var(--saffron);
 }
 
 .skill h3 {
@@ -122,22 +99,41 @@
   align-items: center;
 }
 
-.skills,
-.awards {
+.skills {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
   gap: 10px;
-  text-align: center;
 }
 
-.skill-image,
-.award-image {
-  width: 100px;
-  height: 100px;
+.skills > li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-image {
+  width: 80px;
+  height: 80px;
   object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--tufts-blue);
+}
+
+.skills > li > p {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card.skim:hover,

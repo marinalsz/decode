@@ -268,7 +268,7 @@ const data = {
       },
       skills: [
         {
-          name: "Saturn Return",
+          name: "Saturn Wisdom",
           image: "/skills/saturn.png",
         },
         {
@@ -336,7 +336,7 @@ const data = {
       },
       skills: [
         {
-          name: "Motomami",
+          name: "Motomami Core",
           image: "/skills/motomami.png",
         },
         {
@@ -408,7 +408,7 @@ const data = {
           image: "/skills/lightbulb.png",
         },
         {
-          name: "Horse Whisperer",
+          name: "Horse Elegance",
           image: "/skills/horse.png",
         },
         {
@@ -438,7 +438,7 @@ const data = {
       },
       skills: [
         {
-          name: "Sour",
+          name: "Sour Humour",
           image: "/skills/sour.png",
         },
         {
@@ -506,7 +506,7 @@ const data = {
       },
       skills: [
         {
-          name: "Speak Up",
+          name: "Sense of Justice",
           image: "/skills/megaphone.png",
         },
         {

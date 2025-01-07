@@ -1,15 +1,12 @@
 import "./Menu.css";
-import Card from "../Card/Card";
-import data from "../../data/data";
-
-const { logo, logo_alt, opener, opener_alt, title, subtitle } = data;
+import Button from "/components/Button/Button";
 
 const Menu = () => `
 <div class="modal-container">
-  <button class="modal-trigger">🔍</button>
+  ${Button("🔍", "primary")}
   <div class="modal-overlay hidden">
     <div class="modal">
-      <div class="filter_item">
+      <div class="filter-item">
         <label for="cardType">Filter by information</label>
         <select name="cardType" id="cardType">
           <option value="skim">Skim</option>
@@ -17,39 +14,42 @@ const Menu = () => `
           <option value="deep-dive">Deep Dive</option>
         </select>
       </div>
-      <div class="filter_item">
+      <div class="filter-item">
         <label for="genreType">Filter by genre</label>
         <select name="genreType" id="genreType">
-          <option value="alte">Alté</option>
-          <option value="alternative">Alternative</option>
-          <option value="flamenco">Flamenco</option>
-          <option value="pop">Pop</option>
-          <option value="r&b">R&B</option>
-          <option value="urban-pop">Urban Pop</option>
+          <option value="">Select genre</option>
+          <option value="Alté">Alté</option>
+          <option value="Alternative">Alternative</option>
+          <option value="Flamenco">Flamenco</option>
+          <option value="Pop">Pop</option>
+          <option value="R&B">R&B</option>
+          <option value="Urban Pop">Urban Pop</option>
         </select>
       </div>
-      <div class="filter_item">
+      <div class="filter-item">
         <label for="recordLabel">Filter by label</label>
         <select name="recordLabel" id="recordLabel">
-          <option value="atlantic">Atlantic</option>
-          <option value="capitol">Capitol</option>
-          <option value="columbia">Columbia</option>
-          <option value="epic">Epic</option>
-          <option value="fader">Fader</option>
-          <option value="geffen">Geffen</option>
-          <option value="interscope">Interscope</option>
-          <option value="island">Island</option>
-          <option value="rca">RCA</option>
-          <option value="republic">Republic</option>
-          <option value="sony">Sony</option>
-          <option value="universal">Universal</option>
-          <option value="warner">Warner</option>
+          <option value="">Select label</option>
+          <option value="Atlantic">Atlantic</option>
+          <option value="Capitol">Capitol</option>
+          <option value="Columbia">Columbia</option>
+          <option value="Epic">Epic</option>
+          <option value="Fader">Fader</option>
+          <option value="Geffen">Geffen</option>
+          <option value="Interscope">Interscope</option>
+          <option value="Island">Island</option>
+          <option value="RCA">RCA</option>
+          <option value="Republic">Republic</option>
+          <option value="Sony">Sony</option>
+          <option value="Universal">Universal</option>
+          <option value="Warner">Warner</option>
         </select>
       </div>
-      <button id="applyFilters" class="apply-filters">Apply Filters</button>
+      ${Button("Apply Filters", "secondary")}
     </div>
   </div>
 </div>
 `;
 
 export default Menu;
+

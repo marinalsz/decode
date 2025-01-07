@@ -1,25 +1,22 @@
 import "./Card.css";
-import data from "../../data/data";
 
-const { artists } = data;
-
-const Card = (type) => {
+const Card = (type, filteredArtists) => {
   if (type === "skim") {
     return `
-    ${artists
-      .map(
-        (artist) => `
-      <article class="card skim" data-genre="${artist.genre}" data-label="${artist.label}" data-info="skim">
-        <span id="rankingPosition">${artist.rankingPosition}</span>
-        <h3>${artist.name}</h3>
-      </article>
+      ${filteredArtists
+        .map(
+          (artist) => `
+        <article class="card skim" data-genre="${artist.genre}" data-label="${artist.label}" data-info="skim">
+          <span id="rankingPosition">${artist.rankingPosition}</span>
+          <h3>${artist.name}</h3>
+        </article>
       `
-      )
-      .join("")}
+        )
+        .join("")}
     `;
   } else if (type === "peruse") {
     return `
-      ${artists
+      ${filteredArtists
         .map(
           (artist) => `
         <article class="card peruse" data-genre="${artist.genre}" data-label="${artist.label}" data-info="peruse">
@@ -45,18 +42,16 @@ const Card = (type) => {
           </div>
           <p class="description">${artist.description}</p>
         </article>
-        `
+      `
         )
         .join("")}
-      `;
+    `;
   } else if (type === "deep-dive") {
     return `
-       ${artists
-         .map(
-           (artist) => `
-        <article class="card deep-dive" data-genre="${
-          artist.genre
-        }" data-label="${artist.label}" data-info="deep-dive">
+      ${filteredArtists
+        .map(
+          (artist) => `
+        <article class="card deep-dive" data-genre="${artist.genre}" data-label="${artist.label}" data-info="deep-dive">
           <span id="rankingPosition">${artist.rankingPosition}</span>
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
@@ -103,10 +98,10 @@ const Card = (type) => {
           </section>
       <p class="description"><strong>Analysis:</strong> ${artist.analysis}</p>
       </article>
-        `
-         )
-         .join("")}
-        `;
+      `
+        )
+        .join("")}
+    `;
   }
 };
 
