@@ -5,9 +5,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
-  gap: 60px;
-  background-color: black;
+  padding: 40px;
+  gap: 50px;
+  background-color: var(--raisin-black);
 }
 
 #logo {
@@ -18,13 +18,10 @@ header {
 #opener {
   width: 100%;
   height: auto;
-  object-fit: cover;
   filter: grayscale(100%);
-
 }
 
 #subtitle {
-  color: white;
   font-style: italic;
   font-weight: 800;
   text-transform: uppercase;

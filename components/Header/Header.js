@@ -2,8 +2,7 @@ import "./Header.css";
 import Menu from "../Menu/Menu.js";
 import data from "../../data/data.js";
 
-const { logo, logo_alt, opener, opener_alt, title, subtitle} =
-  data;
+const { logo, logo_alt, opener, opener_alt, title, subtitle } = data;
 
 const Header = () => `
 <header>

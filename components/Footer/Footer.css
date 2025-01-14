@@ -1,10 +1,9 @@
 footer {
   width: 100%;
   height: auto;
-  border-top: 2px solid black;
   text-align: center;
-  padding: 20px;
-  background-color: black;
+  padding: var(--spacing);
+  background-color: var(--raisin-black);
 }
 
 footer > p {

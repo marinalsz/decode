@@ -23,13 +23,13 @@
 }
 
 .btn.secondary {
-    width: 150px;
-    height: 40px;
-    font-size: 1em;
-    color: black;
+  width: 150px;
+  height: 40px;
+  font-size: 1em;
+  color: var(--raisin-black);
 }
 
-.btn.secondary:hover{
-    background-color: var(--electric-indigo);
-    color: white;
+.btn.secondary:hover {
+  background-color: var(--electric-indigo);
+  color: var(--mint-cream);
 }

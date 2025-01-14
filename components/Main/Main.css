@@ -3,12 +3,13 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: var(--spacing);
+  gap: 50px;
   background-color: var(--cardinal);
-  border-top: 2px solid white;
+  border-top: 4px double var(--mint-cream);
+  border-bottom: 4px double var(--mint-cream);
 }
 
 #hero {
@@ -18,18 +19,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  padding: var(--spacing);
+  gap: 50px;
 }
 
 #hero-image {
-  min-width: 400px;
-  width: 60%;
+  width: 80%;
   height: auto;
-  object-fit: cover;
 }
 
 #hero-description {
-  color: white;
   text-align: justify;
 }
 
@@ -41,7 +40,89 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  gap: 20px;
+  padding: var(--small-spacing);
+  gap: var(--spacing);
   background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+}
+
+#message {
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  display: inline-block;
+  width: 10px;
+  height: auto;
+  background-color: transparent;
+}
+
+/* Media queries */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #message{
+    font-size: 1.5em;
+  }
+  span {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #message{
+    font-size: 1.5em;
+  }
+  span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #message{
+    font-size: 2em;
+  }
+  span {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  #message{
+    font-size: 2.5em;
+  }
+  span {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1921px) {
+  #message{
+    font-size: 3em;
+  }
+  span {
+    width: 80px;
+    height: 80px;
+  }
 }

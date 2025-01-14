@@ -1,10 +1,9 @@
 .card {
-  min-width: 300px;
-  max-width: 600px;
+  width: 350px;
   height: auto;
-  color: black;
+  color: var(--raisin-black);
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--mint-cream);
   box-shadow: black 0px 0px 0px 5px inset, var(--pumpkin) -10px 10px inset,
     black 10px 10px inset, black -10px -10px inset,
     var(--electric-indigo) 15px -15px inset;
@@ -13,7 +12,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  gap: 10px;
+  gap: var(--small-spacing);
   transition: 0.5s;
 }
 
@@ -23,10 +22,10 @@
   height: 100px;
   border-radius: 100px;
   border: 6px double var(--electric-indigo);
-  color: white;
+  color: var(--mint-cream);
   font-size: 3em;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: var(--raisin-black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +51,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding: var(--small-spacing);
 }
 
 .stats-one {
@@ -62,7 +61,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-right: 5px double black;
+  border-right: 5px double var(--raisin-black);
 }
 
 .stats-two {
@@ -72,7 +71,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-left: 5px double black;
+  border-left: 5px double var(--raisin-black);
 }
 
 .description {
@@ -84,10 +83,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
+  padding: var(--small-spacing);
+  gap: var(--spacing);
   text-align: center;
 }
 
@@ -105,31 +104,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
+  gap: var(--small-spacing);
 }
 
 .skills > li {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .skill-image {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   border: 3px solid var(--tufts-blue);
 }
 
 .skills > li > p {
   width: 100%;
-  height: 50px;
+  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +135,56 @@
 .card.skim:hover,
 .card.peruse:hover,
 .card.deep-dive:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--raisin-black);
+  color: var(--mint-cream);
+}
+
+/* Media queries */
+
+@media (max-width: 480px) {
+  .stats{
+    padding: 3px;
+  }
+  .stats-one {
+    border-right: 2px double var(--raisin-black);
+  }
+  .stats-two {
+    border-left: 2px double var(--raisin-black);
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .card {
+    width: 300px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 400px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .card {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .card {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .card {
+    width: 800px;
+  }
 }

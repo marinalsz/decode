@@ -16,7 +16,7 @@ ${Footer()}
 const modalOverlay = document.querySelector(".modal-overlay");
 const applyFiltersBtn = document.querySelector(".btn.secondary");
 
-//Abrir modal
+//Función para abrir modal
 document.querySelector(".btn.primary").addEventListener("click", () => {
   const toggleModal = () => {
     modalOverlay.classList.toggle("hidden");
@@ -24,8 +24,8 @@ document.querySelector(".btn.primary").addEventListener("click", () => {
   toggleModal();
 });
 
-//Cerrar modal
-document.querySelector(".modal-overlay").addEventListener("click", (e) => {
+//Función para cerrar modal
+modalOverlay.addEventListener("click", (e) => {
   const closeModal = (event) => {
     if (e.target === modalOverlay || e.target === applyFiltersBtn) {
       modalOverlay.classList.add("hidden");
@@ -34,7 +34,7 @@ document.querySelector(".modal-overlay").addEventListener("click", (e) => {
   closeModal();
 });
 
-// Filtrar los artistas
+//Filtrar los artistas
 const filterArtists = (type, genre, label) => {
   return artists.filter((artist) => {
     const matchesGenre = !genre || artist.genre === genre;
@@ -46,11 +46,32 @@ const filterArtists = (type, genre, label) => {
 // Renderizar las cartas
 const renderCards = (type, genre, label) => {
   const filteredArtists = filterArtists(type, genre, label);
-   // Verifica si hay artistas filtrados
-   if (filteredArtists.length === 0) {
-    document.getElementById("artists").innerHTML = "<p>No artists found for the selected filters.</p>";
+
+  //Si no hay artistas que coincidan con los filtos, se indica con un mensaje
+  if (filteredArtists.length === 0) {
+    document.getElementById("artists").innerHTML =
+      "<p id='message'>No results</p>";
+
+    const textElement = document.getElementById("message");
+    const text = textElement.textContent;
+    textElement.textContent = "";
+    const colors = ["#e6c229", "#f17105", "#6610f2", "#1a8fe3"];
+
+    // Crea spans para cada letra
+    text.split("").forEach((char, index) => {
+      if (char === " ") {
+        const space = document.createElement("span");
+        space.className = "space";
+        textElement.appendChild(space);
+      } else {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.backgroundColor = colors[index % colors.length];
+        textElement.appendChild(span);
+      }
+    });
   } else {
-    // Llamar a la función Card pasando el tipo y los artistas filtrados
+    // En caso contrario, llama a la función Card pasando el tipo (de carta) y los artistas filtrados
     document.getElementById("artists").innerHTML = Card(type, filteredArtists);
   }
 };
@@ -65,4 +86,4 @@ applyFiltersBtn.addEventListener("click", () => {
 });
 
 //Renderizar las cartas por defecto
-renderCards("deep-dive", "", "");
+renderCards("peruse", "", "");

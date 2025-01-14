@@ -51,7 +51,9 @@ const Card = (type, filteredArtists) => {
       ${filteredArtists
         .map(
           (artist) => `
-        <article class="card deep-dive" data-genre="${artist.genre}" data-label="${artist.label}" data-info="deep-dive">
+        <article class="card deep-dive" data-genre="${
+          artist.genre
+        }" data-label="${artist.label}" data-info="deep-dive">
           <span id="rankingPosition">${artist.rankingPosition}</span>
           <h3>${artist.name}</h3>
           <p>${artist.hometown}</p>
